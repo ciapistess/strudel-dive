@@ -13,29 +13,43 @@ automate chords over that base.
 
 Kick on every quarter note, clap on the backbeat, offbeat hats.
 
-{% capture code1 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>basic house floor</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.5)
 stack(
   s("bd*4"),
   s("~ cp ~ cp"),
   s("hh*8").gain(0.5).pan(sine.range(0.3, 0.7))
 )
-{% endcapture %}
-{% include strudel-embed.html code=code1 title="basic house floor" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Filtered chords
 
 Automate a lowpass filter with a slow sine or saw wave to get the classic
 "opening up" feel over a bar or a phrase.
 
-{% capture code2 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>filtered chord stab</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.5)
 n("<0 3 5 3>").chord("major7")
   .s("gm_epiano1")
   .lpf(sine.range(300, 3000).slow(8))
   .room(0.4)
-{% endcapture %}
-{% include strudel-embed.html code=code2 title="filtered chord stab" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Tips
 

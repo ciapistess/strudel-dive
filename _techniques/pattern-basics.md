@@ -11,11 +11,18 @@ within that cycle.
 
 ## The core symbols
 
-{% capture code1 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>four evenly-spaced steps</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 s("bd sn bd sn")
-{% endcapture %}
-{% include strudel-embed.html code=code1 title="four evenly-spaced steps" %}
+    -->
+  </strudel-repl>
+</div>
 
 - `~` — a rest (silence for that step)
 - `*n` — repeat a step n times, e.g. `bd*4`
@@ -25,25 +32,39 @@ s("bd sn bd sn")
 
 ## Alternation across cycles
 
-{% capture code2 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>a different note each cycle</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 n("<0 2 4 7>").scale("C major").s("piano")
-{% endcapture %}
-{% include strudel-embed.html code=code2 title="a different note each cycle" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Stacking patterns
 
 Use `stack(...)` to layer multiple independent patterns that all play together.
 
-{% capture code3 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>stacked drum layers</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 stack(
   s("bd*4"),
   s("~ cp ~ cp"),
   s("hh*8").gain(0.5)
 )
-{% endcapture %}
-{% include strudel-embed.html code=code3 title="stacked drum layers" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Tips
 

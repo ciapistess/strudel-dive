@@ -11,22 +11,36 @@ conditionally cycle to cycle.
 
 ## Changing patterns over cycles with `<>`
 
-{% capture code1 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>build-up over three cycles</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 s("<[bd*4] [bd*4, cp*2] [bd*4, cp*2, hh*8]>")
-{% endcapture %}
-{% include strudel-embed.html code=code1 title="build-up over three cycles" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Conditional layers
 
-{% capture code2 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>sometimesBy for variation</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 stack(
   s("bd*4"),
   s("cp*2").sometimesBy(0.5, fast(2))
 )
-{% endcapture %}
-{% include strudel-embed.html code=code2 title="sometimesBy for variation" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Tips
 

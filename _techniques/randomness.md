@@ -10,28 +10,49 @@ useful because they're deterministic per-cycle rather than fully chaotic.
 
 ## Thinning a pattern
 
-{% capture code1 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>degradeBy removes events probabilistically</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 s("hh*16").degradeBy(0.5)
-{% endcapture %}
-{% include strudel-embed.html code=code1 title="degradeBy removes events probabilistically" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Random note choice
 
-{% capture code2 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>irand picks a random integer each step</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 n(irand(8)).scale("C minor").s("piano")
-{% endcapture %}
-{% include strudel-embed.html code=code2 title="irand picks a random integer each step" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Smooth random motion
 
-{% capture code3 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>perlin noise for organic modulation</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 n("0 3 5 7").s("sawtooth")
   .lpf(perlin.range(200, 4000).slow(4))
-{% endcapture %}
-{% include strudel-embed.html code=code3 title="perlin noise for organic modulation" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Tips
 

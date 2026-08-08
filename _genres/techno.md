@@ -12,27 +12,41 @@ writing lots of distinct sections.
 
 ## The loop
 
-{% capture code1 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>techno loop base</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.55)
 stack(
   s("bd*4"),
   s("~ ~ rim ~").gain(0.8),
   s("hh*16").gain(perlin.range(0.2, 0.5))
 )
-{% endcapture %}
-{% include strudel-embed.html code=code1 title="techno loop base" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Slow-evolving stab
 
-{% capture code2 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>euclidean stab with slow filter drift</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.55)
 n("0")
   .s("sawtooth")
   .lpf(perlin.range(200, 4000).slow(16))
   .resonance(8)
   .struct("t(5,8)")
-{% endcapture %}
-{% include strudel-embed.html code=code2 title="euclidean stab with slow filter drift" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Tips
 

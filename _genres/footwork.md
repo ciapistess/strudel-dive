@@ -10,26 +10,40 @@ layered against straight 16ths, plus rapid-fire chopped vocal or sample stabs.
 
 ## Triplets against 16ths
 
-{% capture code1 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>triplet clap over straight kick</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(1.3)
 stack(
   s("bd*8"),
   s("[~ cp]*3").sound("cp"),
   s("hh*16").gain(0.4)
 )
-{% endcapture %}
-{% include strudel-embed.html code=code1 title="triplet clap over straight kick" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Chopped stab
 
-{% capture code2 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>chopped vocal stab</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(1.3)
 s("vocal").chop(8)
   .often(rev)
   .speed(perlin.range(0.9, 1.3))
   .gain(0.8)
-{% endcapture %}
-{% include strudel-embed.html code=code2 title="chopped vocal stab" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Tips
 

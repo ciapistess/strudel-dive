@@ -21,14 +21,24 @@ index.md, resources.md, about.md, genres/index.md, techniques/index.md
 ## Adding a playable example
 
 Any page can embed a real, runnable Strudel pattern using the official
-`@strudel/embed` web component (already loaded site-wide in the default layout):
+`@strudel/embed` web component (already loaded site-wide in the default layout).
+Write the block directly as HTML — **do not** use a `{% raw %}{% capture %}/{% include %}{% endraw %}`
+combo for this; that pattern triggers a false-positive "Nesting too deep" Liquid
+error on GitHub's classic Pages build (an old Liquid/Jekyll bug, see `about.md`):
 
-```liquid
-{% raw %}{% capture code %}
+```html
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>basic four-on-the-floor</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 s("bd*4, ~ cp ~ cp")
-{% endcapture %}
-{% include strudel-embed.html code=code title="basic four-on-the-floor" %}{% endraw %}
+    -->
+  </strudel-repl>
+</div>
 ```
 
 ## Adding a new genre or technique page

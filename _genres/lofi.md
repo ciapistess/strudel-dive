@@ -11,19 +11,32 @@ swing and subtle detuning matter more than the note choices themselves.
 
 ## Swung drums
 
-{% capture code1 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>swung boom-bap drums</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.45)
 stack(
   s("bd ~ ~ bd ~ ~ bd ~"),
   s("~ sn ~ ~ ~ sn ~ ~"),
   s("hh*8").swingBy(1/3, 8).gain(0.5)
 )
-{% endcapture %}
-{% include strudel-embed.html code=code1 title="swung boom-bap drums" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Dusty chords
 
-{% capture code2 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>detuned crushed epiano</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.45)
 n("0 .. 3").chord("min7")
   .s("gm_epiano2")
@@ -31,8 +44,9 @@ n("0 .. 3").chord("min7")
   .crush(6)
   .room(0.3)
   .gain(0.7)
-{% endcapture %}
-{% include strudel-embed.html code=code2 title="detuned crushed epiano" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Tips
 

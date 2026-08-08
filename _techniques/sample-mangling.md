@@ -10,28 +10,49 @@ re-trigger them — the basis of breakbeat chopping and glitch textures.
 
 ## Chopping
 
-{% capture code1 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>chop a break into 8 pieces</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 s("break").chop(8)
-{% endcapture %}
-{% include strudel-embed.html code=code1 title="chop a break into 8 pieces" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Reordering with striate
 
-{% capture code2 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>striate interleaves slices</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 s("break").striate(4).fast(2)
-{% endcapture %}
-{% include strudel-embed.html code=code2 title="striate interleaves slices" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Speed & direction
 
-{% capture code3 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>varying playback speed/direction per cycle</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 s("break").chop(8)
   .speed("<1 -1 0.5 -0.5>")
-{% endcapture %}
-{% include strudel-embed.html code=code3 title="varying playback speed/direction per cycle" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Tips
 

@@ -11,31 +11,52 @@ note sequence can.
 
 ## Filters
 
-{% capture code1 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>modulated lowpass</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 n("0 3 5 7").s("sawtooth")
   .lpf(sine.range(300, 3000).slow(4))
-{% endcapture %}
-{% include strudel-embed.html code=code1 title="modulated lowpass" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Space: reverb & delay
 
-{% capture code2 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>reverb + rhythmic delay</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 n("0 ~ 3 ~").s("piano")
   .room(0.6)
   .delay(0.375)
   .delayfeedback(0.4)
-{% endcapture %}
-{% include strudel-embed.html code=code2 title="reverb + rhythmic delay" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Grit
 
-{% capture code3 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>distort + bitcrush</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(0.6)
 s("bd*4").distort(2).crush(6)
-{% endcapture %}
-{% include strudel-embed.html code=code3 title="distort + bitcrush" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Tips
 

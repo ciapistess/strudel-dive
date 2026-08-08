@@ -11,23 +11,37 @@ pattern you can chop independently from the bass.
 
 ## The break
 
-{% capture code1 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>basic broken beat</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(1.4)
 s("bd ~ sn ~ ~ bd sn ~")
   .bank("RolandTR909")
-{% endcapture %}
-{% include strudel-embed.html code=code1 title="basic broken beat" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Sub-bass under the break
 
-{% capture code2 %}
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>reese-ish sub bass</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(1.4)
 n("<0 0 3 0>").s("sawtooth")
   .lpf(200)
   .note(-24)
   .gain(0.9)
-{% endcapture %}
-{% include strudel-embed.html code=code2 title="reese-ish sub bass" %}
+    -->
+  </strudel-repl>
+</div>
 
 ## Tips
 

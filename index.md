@@ -13,14 +13,22 @@ title: Home
     new worth writing down.
   </p>
 
-  {% capture herocode %}
+  <div class="strudel-embed">
+  <div class="embed-label">
+    <span>press play — this is live</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
+  </div>
+  <strudel-repl>
+    <!--
 setcps(1)
 n("<0 2 4 6>*4").scale("C minor")
   .s("sawtooth")
   .lpf(sine.range(400, 2000).slow(4))
   .room(0.3)
-  {% endcapture %}
-  {% include strudel-embed.html code=herocode title="press play — this is live" %}
+  
+    -->
+  </strudel-repl>
+</div>
 </section>
 
 {% include cycle-bar.html %}

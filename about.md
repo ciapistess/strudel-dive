@@ -28,7 +28,7 @@ and pushed to the repository. Each page is a plain Markdown file with a
 Strudel code block or two, so adding a new page is a matter of:
 
 1. Add a Markdown file to `_genres/` or `_techniques/` (or a keyword to `_data/genres.yml` / `_data/techniques.yml` to also add its nav card).
-2. Write prose + {% raw %}`{% include strudel-embed.html %}`{% endraw %} blocks for runnable examples.
+2. Write prose + inline `<div class="strudel-embed">...<strudel-repl>` blocks (see README) for runnable examples.
 3. Commit and push — GitHub Pages rebuilds automatically.
 
 ## Stack
@@ -36,5 +36,16 @@ Strudel code block or two, so adding a new page is a matter of:
 - **Jekyll**, built natively by GitHub Pages (no custom build step required)
 - **`@strudel/embed`** web component for playable code examples
 - Plain HTML/CSS, no JS framework
+
+## A build quirk worth knowing
+
+GitHub's classic Pages build environment is pinned to an old `github-pages`
+gem / Liquid version and ignores this repo's `Gemfile` if it can't satisfy it
+exactly. That older Liquid raises a false-positive `Liquid error: Nesting too
+deep included` when a `{% capture %}` variable is passed as a parameter to a
+repeated `{% include %}` call — even with no real recursion. Because of that,
+Strudel embeds on this site are written as plain inline HTML
+(`<div class="strudel-embed">…<strudel-repl>`) rather than through a
+Liquid include helper. See the README for the exact snippet to copy.
 
 </div>
