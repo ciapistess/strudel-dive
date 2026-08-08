@@ -1,0 +1,20 @@
+- slug: pattern-basics
+  name: Pattern Basics
+  accent: cycle
+  blurb: Mini-notation, sequences, cycles — the grammar of Strudel patterns.
+- slug: sequencing
+  name: Sequencing & Structure
+  accent: pulse
+  blurb: Arranging patterns over time — song mode, arrangement, conditionals.
+- slug: effects-fx
+  name: Effects & Sound Design
+  accent: amber
+  blurb: Filters, reverb, delay, distortion — shaping sound after synthesis.
+- slug: sample-mangling
+  name: Sample Mangling
+  accent: violet
+  blurb: Slicing, chopping, and manipulating samples in Strudel.
+- slug: randomness
+  name: Randomness & Generative Control
+  accent: sky
+  blurb: sometimes, degradeBy, perlin, and other sources of controlled chaos.

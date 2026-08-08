@@ -1,0 +1,26 @@
+<!--
+  Usage from a markdown/html page:
+
+  {% capture code %}
+  setcps(1)
+  n("0 2 4 6").scale("C minor")
+    .s("sawtooth")
+    .lpf(800)
+  {% endcapture %}
+  {% include strudel-embed.html code=code title="Minor arp" %}
+
+  Renders the official <strudel-repl> web component (@strudel/embed),
+  which runs real Strudel code client-side — not a hash-encoded URL,
+  so it never breaks when Strudel's share-link format changes.
+-->
+<div class="strudel-embed">
+  <div class="embed-label">
+    <span>{{ include.title | default: "strudel example" }}</span>
+    <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground →</a>
+  </div>
+  <strudel-repl>
+    <!--
+{{ include.code }}
+    -->
+  </strudel-repl>
+</div>

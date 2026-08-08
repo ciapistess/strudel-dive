@@ -1,0 +1,49 @@
+title: Strudel Field Notes
+tagline: Patterns, techniques and genre studies for live coding with Strudel
+description: >-
+  A growing reference for making music with Strudel — examples and
+  techniques organized by genre, plus general live-coding technique guides.
+url: "https://ciapistess.github.io" # fill in once you know your GitHub Pages URL, e.g. https://yourname.github.io
+baseurl: "/strudel-dive" # fill in if the repo is NOT named yourname.github.io, e.g. "/strudel-field-notes"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+collections:
+  genres:
+    output: true
+    permalink: /genres/:path/
+  techniques:
+    output: true
+    permalink: /techniques/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "genres"
+    values:
+      layout: "genre"
+  - scope:
+      path: ""
+      type: "techniques"
+    values:
+      layout: "technique"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

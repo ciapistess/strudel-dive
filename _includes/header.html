@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      STRUDEL FIELD NOTES<span class="brand-blink">_</span>
+    </a>
+    <nav class="seq-nav" aria-label="Main">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+      <a href="{{ '/genres/' | relative_url }}" {% if page.url contains '/genres/' %}aria-current="page"{% endif %}>Genres</a>
+      <a href="{{ '/techniques/' | relative_url }}" {% if page.url contains '/techniques/' %}aria-current="page"{% endif %}>Techniques</a>
+      <a href="{{ '/resources/' | relative_url }}" {% if page.url contains '/resources' %}aria-current="page"{% endif %}>Resources</a>
+      <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}aria-current="page"{% endif %}>About</a>
+    </nav>
+  </div>
+</header>

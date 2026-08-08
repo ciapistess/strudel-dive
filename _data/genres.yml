@@ -1,0 +1,24 @@
+- slug: house
+  name: House
+  accent: pulse
+  blurb: Four-on-the-floor grooves, swung hats, filtered chords.
+- slug: techno
+  name: Techno
+  accent: cycle
+  blurb: Driving loops, hypnotic repetition, minimal variation over long cycles.
+- slug: dnb
+  name: Drum & Bass
+  accent: amber
+  blurb: Fast breaks, chopped amens, sub-bass, syncopated snares.
+- slug: ambient
+  name: Ambient
+  accent: sky
+  blurb: Slow evolving textures, generative pads, sparse rhythm.
+- slug: footwork
+  name: Footwork / Juke
+  accent: violet
+  blurb: Triplet-heavy 160bpm patterns, chopped vocal stabs, polyrhythm.
+- slug: lofi
+  name: Lo-fi Hip-Hop
+  accent: amber
+  blurb: Dusty swung drums, jazzy sampled chords, tape-saturated textures.
