@@ -22,7 +22,7 @@ index.md, resources.md, about.md, genres/index.md, techniques/index.md
 
 Any page can embed a real, runnable Strudel pattern using the official
 `@strudel/embed` web component (already loaded site-wide in the default layout).
-Write the block directly as HTML — **do not** use a `{% capture %}` / `{% include %}`
+Write the block directly as HTML — **do not** use a `{% raw %}{% capture %}/{% include %}{% endraw %}`
 combo for this; that pattern triggers a false-positive "Nesting too deep" Liquid
 error on GitHub's classic Pages build (an old Liquid/Jekyll bug, see `about.md`):
 
