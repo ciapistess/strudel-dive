@@ -1,7 +1,10 @@
-# Strudel Field Notes
+# Strudel Dive
 
 A Jekyll site of examples and techniques for the [Strudel](https://strudel.cc)
 live coding platform, organized by genre, published via GitHub Pages.
+
+The whole website (both content and web structure) is developed via AI assistants (Claude so far), 
+so its truthfulness should always be verified.
 
 ## Structure
 

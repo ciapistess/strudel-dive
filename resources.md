@@ -12,7 +12,7 @@ permalink: /resources/
 
 {% include cycle-bar.html %}
 
-<div class="prose">
+<div class="prose" markdown="1">
 
 ## Official
 

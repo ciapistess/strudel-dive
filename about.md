@@ -12,9 +12,9 @@ permalink: /about/
 
 {% include cycle-bar.html %}
 
-<div class="prose">
+<div class="prose" markdown="1">
 
-Strudel Field Notes is a reference for making music with
+Strudel Dive is a reference for making music with
 [Strudel](https://strudel.cc), organized around genre studies and
 general techniques rather than a top-to-bottom tutorial. Every code example
 on this site is a real, playable `<strudel-repl>` embed — press play and
@@ -36,13 +36,5 @@ Strudel code block or two, so adding a new page is a matter of:
 - **Jekyll**, built natively by GitHub Pages (no custom build step required)
 - **`@strudel/embed`** web component for playable code examples
 - Plain HTML/CSS, no JS framework
-
-## A build quirk worth knowing
-
-GitHub's classic Pages build environment is pinned to an old `github-pages`
-gem / Liquid version and ignores this repo's `Gemfile` if it can't satisfy it
-exactly. Because of that,
-Strudel embeds on this site are written as plain inline HTML rather than through a
-Liquid include helper. See the README for the exact snippet to copy.
 
 </div>
