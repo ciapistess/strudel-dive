@@ -20,6 +20,11 @@ general techniques rather than a top-to-bottom tutorial. Every code example
 on this site is a real, playable `<strudel-repl>` embed — press play and
 edit it in place.
 
+The whole website (both content and web structure) is developed via AI assistants (Claude so far), 
+so its truthfulness should always be verified.
+
+The site is work-in-progress.
+
 ## How it's updated
 
 This site is **updated on demand** rather than on a fixed schedule. New
