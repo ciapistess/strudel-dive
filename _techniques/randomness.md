@@ -33,7 +33,7 @@ s("hh*16").degradeBy(0.5)
   <strudel-repl>
     <!--
 setcps(0.6)
-n(irand(8)).scale("C minor").s("piano")
+n(irand(8).segment(8)).scale("C minor").s("piano")
     -->
   </strudel-repl>
 </div>
@@ -58,4 +58,5 @@ n("0 3 5 7").s("sawtooth")
 
 - `.degradeBy(x)` and `.sometimesBy(x, fn)` both take a probability 0–1 — start subtle (0.1–0.3) unless you want heavy variation.
 - `irand(n)` gives a hard-edged random integer; `perlin` gives smooth continuous randomness — pick based on whether you want steps or drift.
+- `irand`, `perlin`, `sine` and friends are *continuous* signals with no onsets of their own — used inside `n(...)`/`note(...)` alone, nothing will trigger. Give them structure with `.segment(n)` (sample n times per cycle) or `.struct("x(3,8)")` (trigger on a rhythm), or use them to modulate a parameter of an already-discrete pattern like `.lpf(perlin.range(...))`.
 - Because Strudel's randomness is seeded by cycle count, patterns stay reproducible when you share code, unlike true random noise.

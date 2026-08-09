@@ -29,15 +29,21 @@ stack(
 
 ## Chopped stab
 
+Footwork stabs are traditionally vocal chops, but "vocal" isn't a sample
+Strudel ships by default — you'd load your own with `samples(...)`. The
+example below stands in with a loaded break sample so it's playable as-is;
+swap the `samples(...)` line for your own vocal/foley source.
+
 <div class="strudel-embed">
   <div class="embed-label">
-    <span>chopped vocal stab</span>
+    <span>chopped sample stab</span>
     <a href="https://strudel.cc" target="_blank" rel="noopener">open full playground &rarr;</a>
   </div>
   <strudel-repl>
     <!--
+samples('github:tidalcycles/Dirt-Samples/master')
 setcps(1.3)
-s("vocal").chop(8)
+s("breaks125").chop(8)
   .often(rev)
   .speed(perlin.range(0.9, 1.3))
   .gain(0.8)

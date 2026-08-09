@@ -19,11 +19,12 @@ and generative note choice (`.choose()`, `.perlin`) do most of the work.
   <strudel-repl>
     <!--
 setcps(0.2)
-n("<0 3 5 7 10>".slow(4)).scale("D dorian")
-  .s("gm_pad_new_age")
+n("<0 3 5 7 10>").scale("D dorian")
+  .s("gm_voice_oohs")
   .room(0.9)
   .size(0.9)
   .gain(0.6)
+  .slow(4)
     -->
   </strudel-repl>
 </div>
@@ -38,7 +39,7 @@ n("<0 3 5 7 10>".slow(4)).scale("D dorian")
   <strudel-repl>
     <!--
 setcps(0.2)
-n(irand(12)).scale("D dorian")
+n(irand(12).segment(8)).scale("D dorian")
   .s("gm_music_box")
   .degradeBy(0.7)
   .room(0.8)

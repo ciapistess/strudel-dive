@@ -7,6 +7,10 @@ description: Slicing, chopping, and manipulating samples in Strudel.
 
 Strudel can slice a single sample into pieces and reorder, reverse, or
 re-trigger them — the basis of breakbeat chopping and glitch textures.
+The examples below use a real breakbeat sample (`breaks125`) from the
+Dirt-Samples pack, loaded explicitly with `samples(...)` — sample names
+like this aren't in Strudel's small built-in default set, so you need to
+load the pack before the name exists. Swap in your own sample the same way.
 
 ## Chopping
 
@@ -17,8 +21,9 @@ re-trigger them — the basis of breakbeat chopping and glitch textures.
   </div>
   <strudel-repl>
     <!--
+samples('github:tidalcycles/Dirt-Samples/master')
 setcps(0.6)
-s("break").chop(8)
+s("breaks125").chop(8)
     -->
   </strudel-repl>
 </div>
@@ -32,8 +37,9 @@ s("break").chop(8)
   </div>
   <strudel-repl>
     <!--
+samples('github:tidalcycles/Dirt-Samples/master')
 setcps(0.6)
-s("break").striate(4).fast(2)
+s("breaks125").striate(4).fast(2)
     -->
   </strudel-repl>
 </div>
@@ -47,8 +53,9 @@ s("break").striate(4).fast(2)
   </div>
   <strudel-repl>
     <!--
+samples('github:tidalcycles/Dirt-Samples/master')
 setcps(0.6)
-s("break").chop(8)
+s("breaks125").chop(8)
   .speed("<1 -1 0.5 -0.5>")
     -->
   </strudel-repl>
