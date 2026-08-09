@@ -40,7 +40,7 @@ s("bd sn bd sn")
   <strudel-repl>
     <!--
 setcps(0.6)
-n("<0 2 4 7>").scale("C major").s("piano")
+n("<0 2 4 7>").scale("C:major").s("piano")
     -->
   </strudel-repl>
 </div>
@@ -71,3 +71,4 @@ stack(
 - Read mini-notation left to right as "what happens in this slice of the cycle," not as absolute time.
 - Nesting brackets is the main way to add rhythmic detail without changing the overall tempo.
 - `setcps(n)` sets cycles-per-second — lower it to slow the whole pattern down for testing.
+- `.scale("C:major")` needs a **colon**, not a space, between the root and the scale name — `.scale("C major")` silently breaks, because inside mini-notation a space means "next step," so it gets parsed as two meaningless steps instead of one scale name.

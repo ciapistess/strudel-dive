@@ -21,7 +21,7 @@ title: Home
   <strudel-repl>
     <!--
 setcps(1)
-n("<0 2 4 6>*4").scale("C minor")
+n("<0 2 4 6>*4").scale("C:minor")
   .s("sawtooth")
   .lpf(sine.range(400, 2000).slow(4))
   .room(0.3)

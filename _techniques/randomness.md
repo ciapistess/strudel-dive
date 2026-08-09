@@ -33,7 +33,7 @@ s("hh*16").degradeBy(0.5)
   <strudel-repl>
     <!--
 setcps(0.6)
-n(irand(8).segment(8)).scale("C minor").s("piano")
+n(irand(8).segment(8)).scale("C:minor").s("piano")
     -->
   </strudel-repl>
 </div>
